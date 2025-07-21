@@ -7,7 +7,7 @@ const app = express();
 app.set("view engine", "ejs");
 
 const mongoose = require("mongoose");
-const methodOverride = require("method-override");
+
 const morgan = require("morgan");
 
 // Set the port from environment variable or default to 3000
