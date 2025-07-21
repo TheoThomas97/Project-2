@@ -43,8 +43,7 @@ if (process.env.MONGODB_URI) {
 
 // Middleware to parse URL-encoded data from forms
 app.use(express.urlencoded({ extended: false }));
-// Middleware for using HTTP verbs such as PUT or DELETE
-app.use(methodOverride("_method"));
+
 // Morgan for logging HTTP requests
 app.use(morgan('dev'));
 
